@@ -1,0 +1,61 @@
+.calendar-tab {
+width: 100%;
+border: 1px solid black;
+table-layout: fixed;
+}
+.header-weekday{
+background-color: rgb(94, 95, 93);
+height: 50px;
+color: black;
+}
+.week{
+    text-align: center;
+    background-color: rgb(198, 199, 198);
+    height: 50px;
+}
+.header-tab{
+    font-family: 'Balsamiq Sans', cursive;  
+}
+.header-tab{
+background-image: url(img/11.png );
+height: 500px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+text-align: left;
+animation-name: newyear;
+animation-duration:20s; 
+animation-iteration-count:infinite;
+}
+@keyframes newyear{
+ 0%{
+background-image: url(img/11.png );
+}
+33%{
+ background-image: url(img/22.png );   
+}   
+66%{
+    background-image: url(img/33.png );   
+   }  
+99%{
+background-image: url(img/44.png );}  
+}
+.header-tab:hover{
+    animation-play-state: paused;
+}
+td:hover{
+  background-color: rgb(94, 95, 93) ;  
+}
+h1 {
+    animation-name: slider;  
+    animation-duration:3s; 
+    
+}
+@keyframes slider{
+ from {
+  margin-left: 100%; 
+ }  
+ to{
+margin-left: 0%;    
+ }
+}
